@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 from django.db import models
 
-class User(models.Model):
+class UserInfo(models.Model):
     userId = models.CharField(max_length=320) #이메일 최대 길이 RFC2822 정의 따름
     pw=  models.CharField(max_length=10)
     profileURL = models.URLField(null=True, blank=True)
